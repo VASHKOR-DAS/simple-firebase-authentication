@@ -49,12 +49,19 @@ function App() {
       <button onClick={handleGoogleSignIn}>Google Sign In</button>
       <button onClick={handleGoogleSignOut}>Google Sign Out</button>
       
+
       {/* user info */}
-      <div>
+      {/* 
+      *Conditional Rendering
+      user er email jodi amader kase thake tobe amra nicher div ta dekhabo */}
+      {user.email && <div>
         <h3>User name: {user.displayName}</h3>
         <p>Email: {user.email}</p>
         <img src={user.photoURL} alt="" srcSet=''/>
-      </div>
+      </div>}
+
+
+
     </div>
   );
 }
