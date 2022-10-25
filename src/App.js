@@ -49,6 +49,7 @@ function App() {
     signInWithPopup(auth, githubProvider)
     .then( result => {
       const user = result.user
+      setUser(user)
       console.log(user);
     })
 
@@ -69,7 +70,7 @@ function App() {
       {/*Toggle SingIn/SignOut button 
       Jodi user er email thake (tar mane user loging ase) tobe signOut button dekhabo
       nahole signIn button dekhabo */}
-      { user.email ?
+      { user.uid ?
       <button onClick={handleGoogleSignOut}>Google Sign Out</button>
       :
       <>
@@ -82,7 +83,7 @@ function App() {
 
       {/*Conditional Rendering
       user er email jodi amader kase thake tobe amra nicher div ta dekhabo*/}
-      {user.email && <div>
+      {user.uid && <div>
         <h3>User name: {user.displayName}</h3>
         <p>Email: {user.email}</p>
         <img src={user.photoURL} alt="" srcSet=''/>
