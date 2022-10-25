@@ -46,14 +46,22 @@ function App() {
 
   return (
     <div className='App'>
-      <button onClick={handleGoogleSignIn}>Google Sign In</button>
+
+      {/* condition ? true : false */}
+
+      {/*Toggle SingIn/SignOut button 
+      Jodi user er email thake (tar mane user loging ase) tobe signOut button dekhabo
+      nahole signIn button dekhabo */}
+      { user.email ?
       <button onClick={handleGoogleSignOut}>Google Sign Out</button>
-      
+      :
+      <button onClick={handleGoogleSignIn}>Google Sign In</button>
+      }
 
       {/* user info */}
-      {/* 
-      *Conditional Rendering
-      user er email jodi amader kase thake tobe amra nicher div ta dekhabo */}
+
+      {/*Conditional Rendering
+      user er email jodi amader kase thake tobe amra nicher div ta dekhabo*/}
       {user.email && <div>
         <h3>User name: {user.displayName}</h3>
         <p>Email: {user.email}</p>
