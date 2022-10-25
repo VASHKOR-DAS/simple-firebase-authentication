@@ -55,7 +55,10 @@ function App() {
       { user.email ?
       <button onClick={handleGoogleSignOut}>Google Sign Out</button>
       :
-      <button onClick={handleGoogleSignIn}>Google Sign In</button>
+      <>
+        <button onClick={handleGoogleSignIn}>Google Sign In</button>
+        <button>Github Sign In</button>
+      </>
       }
 
       {/* user info */}

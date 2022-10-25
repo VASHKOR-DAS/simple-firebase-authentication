@@ -26,7 +26,7 @@
 
 9. Create a Google auth provider. Do not forget to use new GoogleAuthProvider();
 
-10. go to firebase >Build > Authentication > Sign In method
+10. go to firebase > Build > Authentication > Sign In method
 
 11. Enable Google sign in method
 
@@ -40,9 +40,16 @@
     DISPLAY DATA
 ---------------------------
 
-15. 
+---------------------------
+    ADD A NEW METHOD
+---------------------------
 
-
+1. Enable the Sign In Method
+2. Go to Github and https://github.com/settings/
+3. Create github,fb, twitter, etc app
+4. callback URL used by firebase callback URL
+5. get clintId and secrete
+6. 
 
 
 
