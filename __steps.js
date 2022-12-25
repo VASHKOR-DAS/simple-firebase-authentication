@@ -53,4 +53,25 @@
 
 
 
+
+
+
+---------------------------
+    Facebook login system
+---------------------------
+
+
+1. Go to https://developers.facebook.com/apps
+2. create an business app
+3. facebook login for business
+4. Web
+5. /settings/basic/
+6. copy App ID & App secret and paste it
+firebase
+(https://console.firebase.google.com/project/simple-firebase-authenti-bee57/authentication/providers)
+
+7. copy link (To complete set up, add this OAuth redirect URI to your Facebook app configuration.)
+8. go to fb facebook login for business > Valid OAuth Redirect URIs
+
+and paste copy link & save change
 */
